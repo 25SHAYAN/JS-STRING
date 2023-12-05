@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRINGS</title>
+</head>
+<body>
+    <center>
+        <h1>STRING</h1>
+        <p>COLLECTIONS OF DATA.</p>
+    </center>
+    <hr>
+    <h2>STRING LITERAL</h2>
+    <hr>
+    <script>
+        let str1 = 'WELCOME TO STRING..!';
+        document.write('STR1 - ' , str1 , "<br>");
+        document.write('TYPEOF (STR1) - ' , typeof(str1) , "<br>");
+        document.write(`<p> STR1.LENGTH : ${str1.length} </p>`);
+       /* document.write(`<p> STR1.LENGTH : ${str1.push("TEST")} </p>`);
+        document.write('STR1 :' , str1 , '<br>');*/
+
+        for (let index = 0; index < str1.length; index++) {
+            document.write(str1[index] ,"<br>");
+            
+        }
+    </script>
+
+    <hr>
+    <center>
+        <h1>BY CREATING INSTANCE OF STRING OBJECT DIRECTLY (USING NEW KEYWORD)</h1>
+    </center>
+
+    <hr>
+    <script>
+        let str2 = new String();
+        str2[0]= 'A';
+        str2[1]= 'B';
+        document.write(`<p>CONSTRUCTOR STRING OBJECT : ${str2[0]}</p>`);
+        document.write(`<p>CONSTRUCTOR STRING OBJECT : ${str2[1]}</p>`);
+/* THE ABOVE METHOD IS WRONG TYPE*/
+
+        str2 = "BY CREATING INSTANCE OF STRING OBJECT DIRECTLY (USING NEW KEYWORD"
+        document.write(`<p>CONSTRUCTOR STRING OBJECT : ${str2}</p>`);
+    </script>
+
+    <hr>
+    <center>
+        <h1>BY USING AN STRING OBJECT CONSTRUCTOR(USING NEW KEYWORD)</h1>
+    </center>
+    <hr>
+    <script>
+        let str3 = new String("BY USING AN STRING CONSTRUCTOR (USING NEW KEYWOR)");
+        document.write(`<p> PARAMETER CONSTRUCTOR STRING OBJECT : ${str3}</p>`);
+    </script>
+</body>
+</html>
